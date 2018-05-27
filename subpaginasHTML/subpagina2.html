@@ -14,18 +14,27 @@
 
 <!--div donde va ubicado la barra superior del menu-->
 <div>
-    <center><img src="../imagenes/logohome.JPG"></center> 
-<nav class="#01579b light-blue darken-4">
-    <div class="nav-wrapper">      
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="../index.html"><i class="material-icons left">home</i>INICIO</a></li>
+    <center><img class="responsive-img" src="../imagenes/logohome.JPG"></center>
+ <nav  class="#01579b light-blue darken-4">
+  <div class="nav-wrapper">
+    <a href="#" data-activates="mobile-demo" class="button-collapse">
+      <i class="material-icons">menu</i>
+    </a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="../index.html"><i class="material-icons left">home</i>INICIO</a></li>
        <li><a href="subpagina1.html"><i class="material-icons left">assignment</i>Conceptualización</a></li>
         <li><a href="subpagina2.html"><i class="material-icons left">assignment</i>Riesgos de seguridad Informática</a></li>
-        <li><a href="subpagina3.html"><i class="material-icons left">assignment</i>Normatividad</a></li>  
-      </ul>
-    </div>
-  </nav>
+        <li><a href="subpagina3.html"><i class="material-icons left">assignment</i>Normatividad</a></li>
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+      <li><a href="../index.html">Inicio</a></li>
+        <li><a href="subpagina1.html">Conceptualización</a></li>
+        <li><a href="subpagina2.html">Riesgos de seguridad Informática</a></li>
+        <li><a href="subpagina3.html">Normatividad</a></li>
+    </ul>
   </div>
+</nav>
+</div>
 
   <!--div donde va ubicado el logo
   <div class="container">
@@ -66,17 +75,29 @@ Link de acceso: http://www.mintic.gov.co/gestionti/615/articles-5482_G7_Gestion_
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">Unidad 1 y 2</h5>
-          <p class="grey-text text-lighten-4">Fase de Construcción - Crear un OVI en formato WEB con HTML5 y CSS3</p>
+          <p class="grey-text text-lighten-4">Teléfono: (+57) 1 375 9500 en Bogotá, Colombia
+            Línea gratuita nacional: 01 8000 115223
+            Correo electrónico de atención al usuario: atencionalusuario@unad.edu.co
+            Horario de atención: lunes a viernes de 7:00 a.m. a 7:00 p.m. | sábados de 8:00 a.m. a 2:00 p.m.</p>
         </div>
         
       </div>
     </div>
-    <div class="footer-copyright">      
+    <div class="row">
+      <div class="footer-copyright">
+
+        <div class="container">
+          <div class="col l6 s12">
+            <p class="grey-text text-lighten-4">Escribenos al correo dcruzt@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>      
     </div>
   </footer>
 
-  <script src="js/jquery-3.1.1.min.js"></script>
-  <script src="js/materialize.min.js"></script>
+  <script src="../js/jquery-3.1.1.min.js"></script>
+  <script src="../js/materialize.min.js"></script>
 
 
  <!--script activa el slider-->
@@ -84,6 +105,13 @@ Link de acceso: http://www.mintic.gov.co/gestionti/615/articles-5482_G7_Gestion_
  $(document).ready(function(){
       $('.slider').slider({full_width: true});
     });
+ </script>
+
+</script>
+ <script type="text/javascript">
+   $(document).ready(function(){
+    $(".button-collapse").sideNav();
+  });
  </script>
 
   </body>

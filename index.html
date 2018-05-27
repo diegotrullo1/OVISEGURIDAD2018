@@ -12,11 +12,11 @@
 
  <!--div donde va ubicado el logo-->
   
-<!--div donde va ubicado la barra superior del menu-->
+<!--div donde va ubicado la barra superior del menu
 <div>
-    <center><img src="imagenes/logohome.JPG"></center> 
+    <center><img class="responsive-img" src="imagenes/logohome.JPG"></center> 
 <nav class="#01579b light-blue darken-4">
-    <div class="nav-wrapper">      
+    <div class="nav-wrapper"> 
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="index.html"><i class="material-icons left">home</i>Inicio</a></li>
         <li><a href="subpaginasHTML/subpagina1.html"><i class="material-icons left">assignment</i>Conceptualización</a></li>
@@ -25,7 +25,43 @@
       </ul>
     </div>
   </nav>
+  </div>-->
+
+<div>
+    <center><img class="responsive-img" src="imagenes/logohome.JPG"></center>
+ <nav  class="#01579b light-blue darken-4">
+  <div class="nav-wrapper">
+    <a href="#" data-activates="mobile-demo" class="button-collapse">
+      <i class="material-icons">menu</i>
+    </a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="index.html"><i class="material-icons left">home</i>INICIO</a></li>
+        <li><a href="subpaginasHTML/subpagina1.html"><i class="material-icons left">assignment</i>Conceptualización</a></li>
+        <li><a href="subpaginasHTML/subpagina2.html"><i class="material-icons left">assignment</i>Riesgos de seguridad Informática</a></li>
+        <li><a href="subpaginasHTML/subpagina3.html"><i class="material-icons left">assignment</i>Normatividad</a></li>
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+      <li><a href="index.html">Inicio</a></li>
+        <li><a href="subpaginasHTML/subpagina1.html">Conceptualización</a></li>
+        <li><a href="subpaginasHTML/subpagina2.html">Riesgos de seguridad Informática</a></li>
+        <li><a href="subpaginasHTML/subpagina3.html">Normatividad</a></li>
+    </ul>
   </div>
+</nav>
+</div>
+ <nav class="#01579b light-blue darken-4">
+    <div class="nav-wrapper">
+      <form>
+        <div class="input-field">
+          <input id="search" type="search" required>
+          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+          <i class="material-icons">close</i>
+        </div>
+      </form>
+    </div>
+  </nav>
+
+
 
    <!--contenedor donde esta el rss de noticias y el slider-->
  <div>    
@@ -36,19 +72,19 @@
                 		<div class="slider">
                    			<ul class="slides">	     		 
                 	      		 <li>
-                	        		 <img src="imagenes/2.jpg"> <!-- random image -->        
+                	        		 <img class="responsive-img" src="imagenes/2.jpg"> <!-- random image -->        
                 	     		 </li>
                 	      		 <li>
-                	        		 <img src="imagenes/3.jpg"> <!-- random image -->        
+                	        		 <img class="responsive-img" src="imagenes/3.jpg"> <!-- random image -->        
                 	      		 </li>
                 	      		 <li>
-                	        		 <img src="imagenes/4.jpg"> <!-- random image -->      
+                	        		 <img class="responsive-img" src="imagenes/4.jpg"> <!-- random image -->      
                 	      		 </li>
                              <li>
-                               <img src="imagenes/5.jpg"> <!-- random image -->        
+                               <img class="responsive-img" src="imagenes/5.jpg"> <!-- random image -->        
                              </li>
                              <li>
-                               <img src="imagenes/6.jpg"> <!-- random image -->      
+                               <img class="responsive-img" src="imagenes/6.jpg"> <!-- random image -->      
                              </li>
                     		</ul>
                 		</div> 	
@@ -67,7 +103,7 @@
 
           <p>son impulsadas por el MinTIC. Igualmente, se encuentra una sección específica para los riegos de seguridad informática, teniendo en cuenta que estos permiten ilustrar claramente la importancia e impacto negativo que pueden tener al materializarse en cualquier actividad y desde cualquier lugar del planeta.</p>
 
-          <center><img src="imagenes/logo.jpg"></center><br>
+          <center><img class="responsive-img" src="imagenes/logo.jpg"></center><br>
 
           <h4>OBJETIVO GENERAL</h4>
 
@@ -128,12 +164,24 @@
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">Unidad 1 y 2</h5>
-          <p class="grey-text text-lighten-4">Fase de Construcción - Crear un OVI en formato WEB con HTML5 y CSS3</p>
+          <p class="grey-text text-lighten-4">Teléfono: (+57) 1 375 9500 en Bogotá, Colombia
+            Línea gratuita nacional: 01 8000 115223
+            Correo electrónico de atención al usuario: atencionalusuario@unad.edu.co
+            Horario de atención: lunes a viernes de 7:00 a.m. a 7:00 p.m. | sábados de 8:00 a.m. a 2:00 p.m.</p>
         </div>
         
       </div>
     </div>
-    <div class="footer-copyright">      
+    <div class="row">
+      <div class="footer-copyright">
+
+        <div class="container">
+          <div class="col l6 s12">
+            <p class="grey-text text-lighten-4">Escribenos al correo dcruzt@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>      
     </div>
   </footer>
 
@@ -146,6 +194,11 @@
  $(document).ready(function(){
       $('.slider').slider({full_width: true});
     });
+ </script>
+ <script type="text/javascript">
+   $(document).ready(function(){
+    $(".button-collapse").sideNav();
+  });
  </script>
 
   </body>
